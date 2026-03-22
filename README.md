@@ -101,9 +101,12 @@ A YouTube tutorial URL.
 ### Install
 
 ```bash
-# Clone into your Claude Code skills directory
-git clone https://github.com/vincenthopf/yt-builder.git ~/.claude/skills/yt-builder
+npx skills add vincenthopf/yt-builder
+```
 
+Then run the dependency installer and configure your API key:
+
+```bash
 # Install dependencies (idempotent, platform-aware)
 bash ~/.claude/skills/yt-builder/scripts/init.sh
 
@@ -111,6 +114,19 @@ bash ~/.claude/skills/yt-builder/scripts/init.sh
 cp ~/.claude/skills/yt-builder/.env.example ~/.claude/skills/yt-builder/.env
 # Then edit .env and paste your key
 ```
+
+<details>
+<summary>Manual install (without skills CLI)</summary>
+
+<br />
+
+```bash
+git clone https://github.com/vincenthopf/yt-builder.git ~/.claude/skills/yt-builder
+bash ~/.claude/skills/yt-builder/scripts/init.sh
+cp ~/.claude/skills/yt-builder/.env.example ~/.claude/skills/yt-builder/.env
+```
+
+</details>
 
 ### Use
 
